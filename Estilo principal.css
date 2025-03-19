@@ -1,0 +1,105 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --CorPrimaria:  #B0E0E6;
+    --CorSecundaria:#EE4037;
+    --CorTerciaria:#FEBF2C;
+    --CorTextoDestaque: #922A25;
+
+    --FontePrimaria:'IBM Plex Sans', sans-serif;
+    --FonteSecundaria: 'Lora', serif;
+    --FonteTerciaria: 'Merriweather', serif;
+}
+
+body{
+    height: 200vh;
+}
+.CorpoPrincipal{
+    max-width: 950px;
+    margin: auto;
+}
+header{
+    border: solid red 1px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: var(--CorSecundaria);
+    height: 65px;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.menu{
+    position: absolute;
+    left: 10px;
+}
+.Logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.Logo{
+    width: 55px;
+    height: 55px;
+    
+}
+.menuLatera{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s;
+}
+
+#MenuLateral{
+    padding: 10px;
+    border: none;
+    background-color: var(--CorPrimaria);
+    color: var(--CorTextoDestaque);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.menuLatera a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+.menuLatera a:hover{
+    background-color: #b0e0e6d7;
+    color: #922A25;
+}
+#FecharMenu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    transition: ease-in-out 13ms;
+    cursor: pointer;
+}
+#FecharMenu:hover{
+    color: #922A25;
+}
+/* {} */
