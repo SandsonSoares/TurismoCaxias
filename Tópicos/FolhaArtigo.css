@@ -5,6 +5,7 @@
 
 .descricao h1{
     font-size: 1.8em;
+    text-align: center;
 }
 .chamada{
     color: rgb(80, 79, 79);
@@ -40,6 +41,34 @@
 }
 .conteudo p {
     text-indent: 20px;
+    margin: 10px auto;
+}
+.conteudo h2 {
+    margin: 10px auto;
+    text-align: left;
+}
+.imagemArtigo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.imagemArtigo{
+    width: 100%;
+    height: 250px;
+}
+
+/* CONFIGURAÇÃO DO ARTIGO 01 */
+.Bento{
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+    transition: ease-in-out 55ms;
+}
+.Bento:hover{
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 

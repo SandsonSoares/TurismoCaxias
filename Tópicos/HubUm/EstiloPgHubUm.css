@@ -12,6 +12,22 @@
 }
 
 
+/* CONFIGURAÇÃO DA BIBLIOGRAFIA */
+
+.Bibliografia{
+    width: 100%;
+}
+.biblio{
+    display: block;
+    white-space: normal;
+    text-decoration: none;
+    color: rgb(47, 95, 226);
+    transition: ease-in-out 55ms;
+}
+.biblio:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
 
 
 /* {} */
