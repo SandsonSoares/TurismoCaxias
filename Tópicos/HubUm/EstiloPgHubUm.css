@@ -1,13 +1,17 @@
-.Barra{
+.Barra {
     width: 5px;
     height: 25px;
-    margin: auto 20px;
+    margin: auto 10px;
     border-left: 2px solid rgb(255, 255, 255);
 }
-.TituloSecao{
+
+.TituloSecao {
     color: white;
     font-weight: 600;
     text-shadow: 1px 1px 1px black;
 }
+
+
+
 
 /* {} */

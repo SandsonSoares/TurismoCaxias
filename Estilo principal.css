@@ -1,28 +1,29 @@
-@import 
-url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-:root{
-    --CorPrimaria:  #B0E0E6;
-    --CorSecundaria:#EE4037;
-    --CorTerciaria:#FEBF2C;
+:root {
+    --CorPrimaria: #B0E0E6;
+    --CorSecundaria: #EE4037;
+    --CorTerciaria: #FEBF2C;
     --CorTextoDestaque: #922A25;
 
-    --FontePrimaria:'IBM Plex Sans', sans-serif;
+    --FontePrimaria: 'IBM Plex Sans', sans-serif;
     --FonteSecundaria: 'Lora', serif;
     --FonteTerciaria: 'Merriweather', serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--FontePrimaria);
 }
 
-body, html{
+body,
+html {
     height: 100%;
 }
-.conteiner{
+
+.conteiner {
     display: flex;
     flex-direction: column;
     min-height: 150vh;
@@ -30,7 +31,7 @@ body, html{
 
 /* CONFIGURAÇÃO DO CABEÇALHO DO SITE */
 
-header{
+header {
     border: solid red 1px;
     width: 100%;
     position: sticky;
@@ -50,21 +51,25 @@ header section {
     width: 100%;
     position: relative;
 }
-.menu{
+
+.menu {
     position: absolute;
     left: 10px;
 }
+
 .Logo img {
     width: 100%;
     height: 100%;
     border-radius: 50px;
 }
-.Logo{
+
+.Logo {
     width: 55px;
     height: 55px;
-    
+
 }
-.menuLatera{
+
+.menuLatera {
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -76,7 +81,7 @@ header section {
     transition: left 0.3s;
 }
 
-#MenuLateral{
+#MenuLateral {
     padding: 10px;
     border: none;
     background-color: var(--CorPrimaria);
@@ -85,17 +90,20 @@ header section {
     cursor: pointer;
     position: relative;
 }
+
 .menuLatera a {
     text-decoration: none;
     color: white;
     display: block;
     padding: 10px;
 }
-.menuLatera a:hover{
+
+.menuLatera a:hover {
     background-color: #b0e0e6d7;
     color: #922A25;
 }
-#FecharMenu{
+
+#FecharMenu {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -104,48 +112,55 @@ header section {
     transition: ease-in-out 13ms;
     cursor: pointer;
 }
-#FecharMenu:hover{
+
+#FecharMenu:hover {
     color: #922A25;
 }
 
 /* CONFIGURAÇÃO DO CORPO DO SITE */
 
-.CorpoPrincipal{
+.CorpoPrincipal {
     max-width: 950px;
     margin: 40px auto;
     flex: 1;
 }
 
-.Artigo{
+.Artigo {
     width: 85%;
     display: flex;
     max-height: 250px;
     padding: 10px;
     margin: 20px auto;
 }
-.ImgArtigo{
+
+.ImgArtigo {
     width: 55%;
 }
-.ImgArtigo img{
+
+.ImgArtigo img {
     width: 100%;
     height: 100%;
 }
-.LadoEsquerdo{
+
+.LadoEsquerdo {
     width: 45%;
     padding: 5px;
 }
-.Enunciado{
+
+.Enunciado {
     font-size: 1.3em;
     text-align: center;
     color: var(--CorTextoDestaque);
     text-shadow: 2px 1px 1px #000000c7;
 
 }
-.Topicos{
+
+.Topicos {
     font-size: 1em;
     font-weight: 500;
 }
-.Topicos::before{
+
+.Topicos::before {
     content: "";
     display: inline-block;
     width: 7px;
@@ -154,30 +169,34 @@ header section {
     border-radius: 50%;
     margin-right: 5px
 }
-.DataELocal{
+
+.DataELocal {
     font-size: .7em;
     font-weight: 300;
     margin-top: 15px;
     display: block;
 }
-.linha{
+
+.linha {
     height: 0;
     width: 90%;
     margin: 5px auto;
     border-bottom: .5px solid rgba(0, 0, 0, 0.274);
     padding: 10px 0;
 }
-.ancora{
+
+.ancora {
     text-decoration: none;
     color: black;
 }
-.Artigo:hover .Enunciado{
+
+.Artigo:hover .Enunciado {
     color: var(--CorSecundaria);
 }
 
 /* CONFIGURAÇÃO DO RODAPÉ */
 
-footer{
+footer {
     height: 200px;
     background-color: var(--CorSecundaria);
     padding: 15px;
@@ -190,21 +209,25 @@ footer{
     position: relative;
     box-shadow: 0px -7px 12px 0px #0000007a;
 }
-.LinkExterno::before{
+
+.LinkExterno::before {
     content: "🔗";
     margin-right: 5px;
 }
-.LinkExterno{
+
+.LinkExterno {
     margin: 3px 50px;
     display: block;
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-.LinkExterno:hover{
+
+.LinkExterno:hover {
     text-decoration: underline;
 }
-.IrAoTopo{
+
+.IrAoTopo {
     position: absolute;
     background-color: #B0E0E6;
     color: #922A25;
@@ -214,16 +237,26 @@ footer{
     right: 10px;
     top: 10px;
 }
-.IrAoTopo a::after{
+
+.IrAoTopo a::after {
     content: "⬆";
     margin-left: 10px;
 }
-.IrAoTopo a{
+
+.IrAoTopo a {
     text-decoration: none;
     color: #922A25;
     font-weight: 600;
 }
+
 .IrAoTopo:hover a {
     color: #EE4037;
 }
+
+/* DEFINIÇÃO GERAL PARA A TAG "P" NOS ARTIGOS */
+
+.creditos p {
+    font-family: var(--FonteSecundaria);
+}
+
 /* {} */

@@ -1,0 +1,46 @@
+.CorpoPrincipal{
+    padding: 10px;
+    text-align: justify;
+}
+
+.descricao h1{
+    font-size: 1.8em;
+}
+.chamada{
+    color: rgb(80, 79, 79);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.creditos{
+    margin: 10px auto;
+}
+.autoria{
+    font-weight: 700;
+}
+.publicacao{
+    font-weight: 100;
+    color: rgb(136, 136, 136);
+    font-size: .8em;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.imagemIlustrativa img{
+    width: 100%;
+    height: 100%;
+}
+.imagemIlustrativa{
+    width: 90%;
+    height: 150px;
+    margin: 5px auto;
+}
+.conteudo{
+    margin-top: 20px;
+}
+.conteudo p {
+    text-indent: 20px;
+}
+
+
+/* {} */
