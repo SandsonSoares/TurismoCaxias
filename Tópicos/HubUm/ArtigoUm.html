@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArtigoUm - Nome aqui</title>
+    <title>Vila Getúlio</title>
+    <link rel="shortcut icon" href="/Imagens/FavIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="/Estilo principal.css">
+    <link rel="stylesheet" href="EstiloPgHubUm.css">
     <script src="/Controlador/scriptPrincipal.js"></script>
 </head>
 <body>
+    <div class="conteiner" id="topo">
         <!-- CABEÇALHO DO SITE - FIXO EM TODAS AS PÁGINAS -->
         <header> 
 
@@ -19,7 +22,7 @@
                         <div id="FecharMenu" onclick="PuxarMenu()">
                             X
                         </div>
-                        <a href="#">Tópico aqui</a>
+                        <a href="/Pagina inicial/index.html">Página inicial</a>
                         <a href="#">Tópico aqui</a>
                         <a href="#">Tópico aqui</a>
                         <a href="#">Tópico aqui</a>
@@ -29,7 +32,10 @@
                 <div  class="Logo">
                     <img src="/Imagens/Logotipo.png" alt="Turismo em duque de caxias">
                 </div>
-    
+
+                <div class="Barra"></div>
+                <h2 class="TituloSecao"> 3° Distrito </h2>
+                
             </section>
     
         </header>
@@ -64,21 +70,22 @@
     <footer>
         
         <div class="Logo">
-            <img src="#" alt="#">
+            <img src="/Imagens/Logotipo.png" alt="Visitando Duque de Caxias">
         </div>
 
         <div class="contato">
-            <p>número para contato aqui</p>
-            <p>e-mail para contato aqui</p>
-            <p>Página no instagram aqui</p>
-            <p>Currículo lattes aqui</p>
+            <a href="#" class="LinkExterno" target="_blank">(55) 55555-5555</a>
+            <a href="#" class="LinkExterno" target="_blank">Seuemail@gmail.com</a>
+            <a href="#" class="LinkExterno" target="_blank">@Perfil Do instagram</a>
+            <a href="#" class="LinkExterno" target="_blank">Currículo lattes</a>
         </div>
 
         <div class="IrAoTopo">
-            <a href="#">Ir ao Topo</a>
+            <a href="#topo">Ir ao Topo</a>
         </div>
 
     </footer>
 
+</div>
 </body>
 </html>
